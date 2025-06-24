@@ -1,3 +1,23 @@
-.svg_mini_card{
+.svg-mini-card{
     width: 30px;
 }
+.card-title{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.card_body_img{
+    width: 100%;
+    height: auto;
+}
+
+.card-img-top{
+    width: 100px;
+}
+
+.list-group-item{
+    flex-direction: row;
+    gap: 20px;
+}
+
+
