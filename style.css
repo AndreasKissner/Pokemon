@@ -1,14 +1,27 @@
+
+:root {
+  --main-font: 'PokemonSolid', sans-serif;
+
+}
+
+
+@font-face {
+  font-family: 'PokemonSolid';
+  src: url('./assets/fonts/PokemonSolid.ttf') format('truetype');
+}
+
+
 body{
     box-sizing: border-box;
      background: linear-gradient(135deg, #a8e063, #56ab2f);
      min-height: 100vw;
+     font-family: var(--main-font)
 }
 
 p{
     margin: 0;
     padding: 0;
 }
-
 
 .d-none{
     display: none;

@@ -1,3 +1,30 @@
+.card-3d {
+  perspective: 1000px;
+  border-radius: 1rem; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.card-3d:hover {
+  transform: rotateY(8deg) rotateX(3deg) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-3d .card-body,
+.card-3d img {
+  transition: transform 0.3s ease;
+}
+
+.card-3d:hover .card-body {
+  transform: translateZ(20px);
+}
+
+.card-3d:hover img {
+  transform: translateZ(10px);
+}
+
+
 .svg-mini-card{
     width: 30px;
 }
@@ -13,11 +40,26 @@
 
 .card-img-top{
     width: 100px;
+    height: auto;
 }
+.card-img-top {
+  width: 100px;
+  height: auto;
+  border-radius: 0.75rem; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.card-3d:hover .card-img-top {
+  transform: translateZ(20px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
 
 .list-group-item{
     flex-direction: row;
-    gap: 20px;
+    gap: 40px;
 }
 
 
