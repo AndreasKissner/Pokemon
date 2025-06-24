@@ -10,25 +10,25 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./stylesFolder/header.css">
+    <link rel="stylesheet" href="./stylesFolder/footer.css">
     <link rel="stylesheet" href="./stylesFolder/mini_cards_style.css">
 
     <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="wrapper"></div>
+   
     <header class="flex-standard mt-5 mb-5">
-
         <h1>Pokémon World</h1>
-        <input type="text" id="searchInput" placeholder="Search Pokémon…">
-        <button id="loadMoreBtn"> Load more Pokemon</button>
-        <button id="resetBtn"> Reset all</button>
-
+        <label for="input_search" class="form-label"></label>
+        <input type="text" class="form-control" id="input_search" placeholder="SEARCH POKEMON.....">
+        <button type="button" id="load_more_btn" class="btn btn-outline-secondary">LOAD MORE POKEMONS</button>
+        <button type="button" id="reset-btn" class="btn btn-outline-danger">RESET ALL</button>
     </header>
 
+<div class="wrapper">
 
-
-    <div class="card card-3d" style="width: 18rem;">
+    <div class="card card-3d mt-5 mb-5" style="width: 220px;">
         <div class="card-body-img flex-standard">
             <img src="./assets/image/3.png" class="card-img-top" alt="...">
         </div>
@@ -56,9 +56,26 @@
                 <p id="protection"> HP:34</p>
             </li>
         </ul>
+    </div>
 
+ 
+
+</div>
+<footer class="bg-dark text-light py-4 ">
+  <div class="footer-container text-center">
+    <p class="mb-1">Thanks for exploring the world of Pokémon!</p>
+    <p class="mb-2">Created with ❤️ by Andreas – for all trainers out there.</p>
+    <a href="https://www.pokemon.com/us/" target="_blank" class="text-warning text-decoration-none">
+      Visit the official Pokémon website
+    </a>
+    <div class="mt-3">
+      <img src="./assets/image/spinner.svg" alt="Pokéball" width="40" height="40">
     </div>
-    </div>
+  </div>
+</footer>
+
+
+
 </body>
 
 </html>
