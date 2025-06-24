@@ -24,8 +24,6 @@
   transform: translateZ(10px);
 }
 
-
-
 .card-title{
     flex-direction: column;
     gap: 20px;
@@ -51,12 +49,6 @@
 .card-3d:hover .card-img-top {
   transform: translateZ(20px) scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-
-.list-group-item{
-    flex-direction: row;
-    gap: 40px;
 }
 
 

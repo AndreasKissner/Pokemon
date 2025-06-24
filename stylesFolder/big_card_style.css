@@ -8,22 +8,67 @@
     width: 100%;
     width: 700px;
     height: 50vh;
-  
+    display: flex;
     justify-content: space-around;
     flex-direction: row;
-    background-color: transparent;
+    background-color: rgba(0, 0, 255, 0.106);
+    
 }
 
 .img-name-id-big {
     width: 100%;
     max-width: 160px;
     display: flex;
-    align-items: stretch;
+    align-items: flex-end;
     flex-direction: column;
-    align-content: center;
-    justify-content: flex-start;
 }
 
 .svg-mini-card {
     width: 30px;
+}
+
+.big-right-skills {
+    width: 100%;
+    min-height: 300px;
+    max-width: 200px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-change-overlay-img {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+.card>.list-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+      width: 100%;
+    max-width: 200px;
+}
+
+.list-group-item {
+    display: flex;
+align-items: center;
+    width: 100%;
+    max-width: 150px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    gap: 20px;
+}
+
+.weak,
+.evo {
+    border: 2px solid red;
+    height: 150px;
 }
