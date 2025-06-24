@@ -1,0 +1,13 @@
+# Ignore standards files
+assets/ligthmokup.html
+
+
+# Ignoriere temporäre Dateien
+*.log
+*.tmp
+
+# Ignoriere VSCode-Einstellungen
+.vscode/
+
+# Ignoriere Umgebungsvariablen
+.env
