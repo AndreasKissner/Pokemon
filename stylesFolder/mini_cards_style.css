@@ -13,7 +13,7 @@
 
 .card-3d .card-body,
 .card-3d img {
-  transition: transform 0.3s ease;
+  transition: transform 0.250ms ease;
 }
 
 .card-3d:hover .card-body {

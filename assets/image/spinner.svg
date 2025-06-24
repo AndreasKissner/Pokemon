@@ -3,6 +3,9 @@
   <desc>Ein runder, animierter Pokéball-Spinner mit Puls und Rotation.</desc>
 
   <g id="pokeball-group" transform="translate(2.5 2.5) scale(0.95)">
+    <!-- Schwarzer äußerer Rahmen -->
+    <circle cx="50" cy="50" r="45" fill="none" stroke="black" stroke-width="10" />
+
     <!-- Obere rote Hälfte -->
     <path d="M5,50 a45,45 0 0,1 90,0" fill="#DC0A2D" />
 
@@ -13,7 +16,7 @@
     <line x1="5" y1="50" x2="95" y2="50" stroke="black" stroke-width="6" />
 
     <!-- Mittelknopf -->
-    <circle id="center-button" cx="50" cy="50" r="15" fill="white" stroke="black" stroke-width="4">
+    <circle id="center-button" cx="50" cy="50" r="15" fill="white" stroke="black" stroke-width="10">
       <animate
         attributeName="r"
         values="15; 16; 15"
