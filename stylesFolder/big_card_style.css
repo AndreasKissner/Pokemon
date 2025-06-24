@@ -1,6 +1,29 @@
-.big-card{
+.big-overlay-card {
     width: 100%;
-    display: flex;
- flex-direction: row;
+    max-width: 1000px;
 
+}
+
+.big-card {
+    width: 100%;
+    width: 700px;
+    height: 50vh;
+  
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: transparent;
+}
+
+.img-name-id-big {
+    width: 100%;
+    max-width: 160px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.svg-mini-card {
+    width: 30px;
 }
