@@ -34,10 +34,6 @@
     height: auto;
 }
 
-.card-img-top{
-    width: 100px;
-    height: auto;
-}
 .card-img-top {
   width: 100px;
   height: auto;
@@ -53,3 +49,4 @@
 }
 
 
+/* card flip */

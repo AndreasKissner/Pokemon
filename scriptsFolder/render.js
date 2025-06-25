@@ -11,14 +11,17 @@ function renderFooter(){
 function renderMiniCard(){
     let miniCardContent = document.getElementById("mini-card-content");
     miniCardContent.innerHTML = "";
-  
-      
-        miniCardContent.innerHTML += getMiniCardTemplate();
+        for (let i = 0; i < allPokemons.length; i++) {
+    const cardHTML = getMiniCardTemplate(allPokemons[i]);
+    miniCardContent.innerHTML += cardHTML;
+  }
+
   
 }
 
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
   renderHeader();
   renderFooter();
-  renderMiniCard();
+  await loadInitPokemons();  // wichtig: Warten bis geladen
+  renderMiniCard();          // dann anzeigen
 });
