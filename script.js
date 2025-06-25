@@ -1,2 +1,14 @@
-let list = await loadPokemonList(20, 0);
-let fullPokemon = await loadPokemonDetails(list[0].url);
+
+let allPokemons = [];
+
+
+
+async function loadInitPokemons() {
+  const list = await loadPokemonList(20, 0);
+
+  for (let i = 0; i < list.length; i++) {
+    const url = list[i].url;
+    const pokemon = await loadPokemonDetails(url);
+    allPokemons.push(pokemon);
+  }
+}
