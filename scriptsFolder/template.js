@@ -8,5 +8,23 @@ function getHeaderTemplate(){
         <button type="button" id="reset-btn" class="btn btn-outline-danger">RESET ALL</button>
     </header>
 
-    `
+    `;
+}
+
+function getFooterTemplate(){
+    return`
+      <footer class="bg-dark text-light py-4 ">
+        <div class="footer-container text-center">
+            <p class="mb-1">Thanks for exploring the world of Pokémon!</p>
+            <p class="mb-2">Created with ❤️ by Andreas – for all trainers out there.</p>
+            <a href="https://www.pokemon.com/us/" target="_blank" class="text-warning text-decoration-none">
+                Visit the official Pokémon website
+            </a>
+            <div class="mt-3">
+                <img src="./assets/image/spinner.svg" alt="Pokéball" width="40" height="40">
+            </div>
+        </div>
+    </footer>
+
+    `;
 }
