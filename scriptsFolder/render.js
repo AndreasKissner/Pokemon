@@ -8,7 +8,17 @@ function renderFooter(){
     footerContent.innerHTML = getFooterTemplate();
 }
 
+function renderMiniCard(){
+    let miniCardContent = document.getElementById("mini-card-content");
+    miniCardContent.innerHTML = "";
+  
+      
+        miniCardContent.innerHTML += getMiniCardTemplate();
+  
+}
+
 window.addEventListener("load", () => {
-  renderHeader()
+  renderHeader();
   renderFooter();
+  renderMiniCard();
 });
