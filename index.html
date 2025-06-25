@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./stylesFolder/footer.css">
     <link rel="stylesheet" href="./stylesFolder/mini_cards_style.css">
     <link rel="stylesheet" href="./stylesFolder/big_card_style.css">
+    <link rel="stylesheet" href="./stylesFolder/overlays.css">
     <script src="./scriptsFolder/template.js"></script>
     <script src="./scriptsFolder/render.js"></script>
     <script src="script.js"></script>
@@ -20,57 +21,53 @@
 </head>
 
 <body>
+    <div id="big-overlay" class="overlay d-none"></div>
+    <div id="header"></div>
+    <div class="wrapper flex-standard">
+        <div id="mini-card-content"></div>
+        
 
-<div id="header"></div>
-<div class="wrapper flex-standard">
 
-    <div id="mini-card-content"></div>
- 
+        <div class="big-overlay-card">
+            <div class="card card-3d mt-5 mb-5 py-10 flex-standard big-card">
+                <div class="img-name-id-big">
+                    <div class="card-body-img ">
+                        <img src="./assets/image/3.png" class="card-img-top" alt="...">
+                    </div>
 
-    <div class="big-overlay-card">
-
-        <div id="big-overlay"></div>
-
-        <div class="card card-3d mt-5 mb-5 py-10 flex-standard big-card">
-            <div class="img-name-id-big">
-                <div class="card-body-img ">
-                    <img src="./assets/image/3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title ">
+                            <p class="name-of-pokemon">NAME</p>
+                            <div id="index-of-pokemon">(# 3)</div>
+                        </h5>
+                    </div>
                 </div>
 
-                <div class="card-body">
-                    <h5 class="card-title ">
-                        <p class="name-of-pokemon">NAME</p>
-                        <div id="index-of-pokemon">(# 3)</div>
-                    </h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><img class="svg-mini-card" src="./assets/image/heart.svg" alt="heart">
+                        <p id="health"> HP:34</p>
+                    </li>
+                    <li class="list-group-item"><img class="svg-mini-card" src="./assets/image/sword.svg" alt="sword">
+                        <p id="force"> HP:34</p>
+                    </li>
+                    <li class="list-group-item"><img class="svg-mini-card" src="./assets/image/shield.svg "
+                            alt="Protective Shield">
+                        <p id="protection"> HP:34</p>
+                    </li>
+                </ul>
+                <div class="big-right-skills">
+                    <p class="weak">WEAKNESS:</p>
+                    <p class="evo">EVOLUTION:</p>
                 </div>
-            </div>
-
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><img class="svg-mini-card" src="./assets/image/heart.svg" alt="heart">
-                    <p id="health"> HP:34</p>
-                </li>
-                <li class="list-group-item"><img class="svg-mini-card" src="./assets/image/sword.svg" alt="sword">
-                    <p id="force"> HP:34</p>
-                </li>
-                <li class="list-group-item"><img class="svg-mini-card" src="./assets/image/shield.svg "
-                        alt="Protective Shield">
-                    <p id="protection"> HP:34</p>
-                </li>
-            </ul>
-            <div class="big-right-skills">
-                <p class="weak">WEAKNESS:</p>
-                <p class="evo">EVOLUTION:</p>
-            </div>
-            <div class="btn-change-overlay-img">
-                <button class="btn btn-outline-primary">LAST</button>
-                <button class="btn btn-outline-light">NEXT</button>
+                <div class="btn-change-overlay-img">
+                    <button class="btn btn-outline-primary">LAST</button>
+                    <button class="btn btn-outline-light">NEXT</button>
+                </div>
             </div>
         </div>
 
-    </div>
+        <div id="footer"></div>
 
-<div id="footer"></div>
-  
 </body>
 
 </html>
