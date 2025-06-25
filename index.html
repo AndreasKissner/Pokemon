@@ -13,23 +13,17 @@
     <link rel="stylesheet" href="./stylesFolder/footer.css">
     <link rel="stylesheet" href="./stylesFolder/mini_cards_style.css">
     <link rel="stylesheet" href="./stylesFolder/big_card_style.css">
-
+    <script src="./scriptsFolder/template.js"></script>
+    <script src="./scriptsFolder/render.js"></script>
     <script src="script.js"></script>
     <link rel="icon" type="image/svg+xml" href="./assets/image/spinner.svg">
 </head>
 
 <body>
 
+<div id="header"></div>
+
     
-
-    <header class="flex-standard mt-5 mb-5">
-        <h1>Pokémon World</h1>
-        <label for="input_search" class="form-label"></label>
-        <input type="text" class="form-control" id="input_search" placeholder="SEARCH POKEMON.....">
-        <button type="button" id="load_more_btn" class="btn btn-outline-secondary">LOAD MORE POKEMONS</button>
-        <button type="button" id="reset-btn" class="btn btn-outline-danger">RESET ALL</button>
-    </header>
-
     <div class="wrapper">
 
         <div class="card card-3d mt-5 mb-5" style="width: 220px;">
@@ -50,19 +44,19 @@
     </div>
 
     <div class="big-overlay-card">
-       
-        <div class="card card-3d mt-5 mb-5 py-10 flex-standard big-card" >
-            <div class="img-name-id-big">
-            <div class="card-body-img ">
-                <img src="./assets/image/3.png" class="card-img-top" alt="...">
-            </div>
 
-            <div class="card-body">
-                <h5 class="card-title ">
-                    <p class="name-of-pokemon">NAME</p>
-                    <div id="index-of-pokemon">(# 3)</div>
-                </h5>
-            </div>
+        <div class="card card-3d mt-5 mb-5 py-10 flex-standard big-card">
+            <div class="img-name-id-big">
+                <div class="card-body-img ">
+                    <img src="./assets/image/3.png" class="card-img-top" alt="...">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title ">
+                        <p class="name-of-pokemon">NAME</p>
+                        <div id="index-of-pokemon">(# 3)</div>
+                    </h5>
+                </div>
             </div>
 
             <ul class="list-group list-group-flush">
@@ -78,15 +72,15 @@
                 </li>
             </ul>
             <div class="big-right-skills">
-            <p class="weak">WEAKNESS:</p>
-            <p class="evo">EVOLUTION:</p>
-        </div>
-        <div class="btn-change-overlay-img">
-            <button class="btn btn-outline-primary">LAST</button>
-            <button class="btn btn-outline-light">NEXT</button>
+                <p class="weak">WEAKNESS:</p>
+                <p class="evo">EVOLUTION:</p>
+            </div>
+            <div class="btn-change-overlay-img">
+                <button class="btn btn-outline-primary">LAST</button>
+                <button class="btn btn-outline-light">NEXT</button>
             </div>
         </div>
-          
+
     </div>
 
 
